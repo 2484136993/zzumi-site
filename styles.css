@@ -254,3 +254,78 @@ body {
 .loading { text-align: center; padding: 40px; color: #999; }
 .tag { display: inline-block; padding: 3px 12px; background: var(--light-bg); color: var(--primary); border-radius: 15px; font-size: 12px; margin-right: 8px; }
 .disclaimer { margin-top: 30px; padding: 20px; background: var(--light-bg); border-radius: 8px; font-size: 14px; color: #888; border-left: 4px solid var(--border); }
+
+/* 热门搜索区块 */
+.hot-search-section {
+    background: linear-gradient(135deg, #fff5f5 0%, #fef0f0 100%);
+    padding: 50px 0;
+}
+.hot-search-title {
+    font-size: 1.6rem !important;
+    color: var(--secondary) !important;
+}
+.hot-search-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+.hot-tag {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--white);
+    color: var(--secondary);
+    border-radius: 25px;
+    font-size: 14px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: all 0.3s;
+    border: 1px solid var(--border);
+    white-space: nowrap;
+}
+.hot-tag:hover {
+    background: var(--primary);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(201,160,160,0.3);
+    border-color: var(--primary);
+}
+
+/* 移动端热门搜索突出样式 */
+@media (max-width: 768px) {
+    .hot-search-section {
+        padding: 40px 0;
+        background: linear-gradient(135deg, #ffe8e8 0%, #ffd6d6 100%);
+    }
+    .hot-search-title {
+        font-size: 1.5rem !important;
+        font-weight: 700 !important;
+        text-align: center;
+    }
+    .hot-search-section .section-title p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .hot-search-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding: 0 5px;
+    }
+    .hot-tag {
+        padding: 14px 22px;
+        font-size: 16px;
+        border-radius: 30px;
+        background: var(--white);
+        box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        font-weight: 500;
+        border: 2px solid var(--primary);
+        color: var(--primary-dark);
+    }
+    .hot-tag:hover, .hot-tag:active {
+        background: var(--primary);
+        color: var(--white);
+        transform: scale(1.05);
+    }
+}
