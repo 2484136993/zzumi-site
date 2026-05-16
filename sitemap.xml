@@ -198,4 +198,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+    <url><loc>https://zzumi.top/news/30-%E9%83%91%E5%B7%9Eumi%E6%9C%89%E7%BE%8E%E7%9B%B8%E5%85%B3%E4%BB%8B%E7%BB%8D.html</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
+    <url><loc>https://zzumi.top/news/31-%E9%83%91%E5%B7%9Eumi%E6%9C%89%E7%BE%8E%E6%97%A5%E5%B8%B8%E8%B5%84%E8%AE%AF.html</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
 </urlset>
