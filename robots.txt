@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zzumi.top/sitemap.xml
+
+# Disallow no indexing needed
+Disallow: 

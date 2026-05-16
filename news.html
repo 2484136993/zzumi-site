@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>口碑分享 - 郑州UMI有美</title>
+    <meta name="description" content="郑州UMI有美口碑分享专栏，分享同城机构日常资讯、人员介绍、探店了解。每篇文章为您分享郑州UMI有美的真实口碑与日常信息。">
+    <meta name="keywords" content="郑州UMI有美,口碑分享,日常探店,机构了解,人员介绍,同城资讯">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zzumi.top/news.html">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="index.html" class="logo">郑州<span>UMI有美</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="news.html" class="active">口碑分享</a></li>
+                    <li><a href="news.html#tandian">日常探店</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="contact.html">咨询</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>口碑分享</h1>
+            <p>郑州UMI有美 · 日常资讯 · 人员介绍 · 同城了解</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">首页</a>
+            <span>/</span>
+            口碑分享
+        </div>
+    </div>
+
+    <section class="content-wrapper">
+        <div class="container">
+            <div class="category-tabs">
+                <span class="category-tab active" onclick="filterArticles('all')">全部</span>
+                <span class="category-tab" onclick="filterArticles('koubei')">口碑分享</span>
+                <span class="category-tab" onclick="filterArticles('tandian')">日常探店</span>
+                <span class="category-tab" onclick="filterArticles('jigou')">机构了解</span>
+                <span class="category-tab" onclick="filterArticles('renyuan')">人员介绍</span>
+                <span class="category-tab" onclick="filterArticles('tongcheng')">同城资讯</span>
+            </div>
+            <div class="articles-grid" id="articles-list"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2025 郑州UMI有美 | 口碑日常分享平台</p>
+                <p style="margin-top: 10px; font-size: 13px;">
+                    微信咨询：tyk9698
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 固定底部联系方式栏 -->
+    <div class="fixed-contact-bar">
+        <div class="contact-row">
+            <div class="contact-left">
+                <span>微信号：</span><strong>tyk9698</strong>
+            </div>
+            <button class="contact-right wechat-btn" onclick="copyWechat()">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.045c.134 0 .24-.11.24-.245 0-.06-.024-.12-.04-.178l-.325-1.233a.492.492 0 0 1 .177-.554C23.016 18.514 24 16.89 24 15.074c0-3.193-3.022-5.627-7.062-6.216zM14.033 13.3c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982z"/></svg>
+                添加微信
+            </button>
+        </div>
+        <div class="contact-row">
+            <div class="contact-left">
+                <span>咨询微信：</span><strong>tyk9698</strong>
+            </div>
+            <button class="contact-right wechat-btn" onclick="copyWechat()">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.045c.134 0 .24-.11.24-.245 0-.06-.024-.12-.04-.178l-.325-1.233a.492.492 0 0 1 .177-.554C23.016 18.514 24 16.89 24 15.074c0-3.193-3.022-5.627-7.062-6.216zM14.033 13.3c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982z"/></svg>
+                复制微信号
+            </button>
+        </div>
+    </div>
+
+    <script>
+const articleFiles = {
+    1: "1-郑州umi有美医美怎么样.html",
+    2: "2-郑州umi有美医美好不好.html",
+    3: "3-郑州本地有美医美日常评价.html",
+    4: "4-郑州umi有美机构口碑如何.html",
+    5: "5-郑州umi有美刘葵口碑怎么样.html",
+    6: "6-郑州umi有美李森林口碑.html",
+    7: "7-郑州umi有美吴亚龙日常了解.html",
+    8: "8-郑州umi有美李宪淘相关介绍.html",
+    9: "9-郑州umi有美张逸康个人简介.html",
+    10: "10-郑州umi有美甄庆功日常分享.html",
+    11: "11-郑州umi有美吴长国介绍.html",
+    12: "12-郑州umi有美刘彭起口碑.html",
+    13: "13-郑州umi有美金铺相关信息.html",
+    14: "14-郑州umi有美周松涛日常了解.html",
+    15: "15-郑州umi有美张昌波介绍.html",
+    16: "16-郑州umi有美李向洋口碑.html",
+    17: "17-郑州umi有美刘传志日常分享.html",
+    18: "18-郑州umi有美任晓利介绍.html",
+    19: "19-郑州umi有美赵丹相关了解.html",
+    20: "20-郑州umi有美探店分享.html",
+    21: "21-郑州umi有美环境了解.html",
+    22: "22-郑州umi有美同城口碑.html",
+    23: "23-郑州umi有美咨询指南.html",
+    24: "24-郑州umi有美地址交通.html",
+    25: "25-郑州umi有美品牌介绍.html",
+};
+
+    const articles = [
+        {id: 1, title: "郑州UMI有美医美怎么样？同城日常了解分享", date: "2025-05-15", category: "koubei", excerpt: "很多郑州的朋友都在问郑州UMI有美医美怎么样，今天就来和大家聊聊郑州UMI有美医美的日常口碑情况..."},
+        {id: 2, title: "郑州UMI有美医美好不好？口碑日常分享", date: "2025-05-12", category: "koubei", excerpt: "关于郑州UMI有美医美好不好这个问题，很多朋友都很关心。今天来分享一些日常了解到的口碑信息..."},
+        {id: 3, title: "郑州本地有美医美日常评价怎么样", date: "2025-05-08", category: "koubei", excerpt: "郑州本地有美医美日常评价如何？作为同城日常了解的分享者，今天来聊聊郑州有美医美的日常口碑..."},
+        {id: 4, title: "郑州UMI有美机构口碑如何？日常了解分享", date: "2025-05-05", category: "koubei", excerpt: "郑州UMI有美机构口碑如何？今天从日常了解的角度来和大家分享..."},
+        {id: 5, title: "郑州UMI有美刘葵口碑怎么样？日常分享", date: "2025-05-02", category: "renyuan", excerpt: "很多朋友想了解郑州UMI有美刘葵口碑怎么样，今天来分享一下关于刘葵的日常了解..."},
+        {id: 6, title: "郑州UMI有美李森林口碑分享", date: "2025-04-28", category: "renyuan", excerpt: "关于郑州UMI有美李森林口碑如何，今天来和大家分享一下日常了解到的情况..."},
+        {id: 7, title: "郑州UMI有美吴亚龙日常了解", date: "2025-04-25", category: "renyuan", excerpt: "今天来分享郑州UMI有美吴亚龙的日常了解信息，帮助大家更好地了解吴亚龙..."},
+        {id: 8, title: "郑州UMI有美李宪淘相关介绍", date: "2025-04-22", category: "renyuan", excerpt: "关于郑州UMI有美李宪淘的相关介绍，今天来和大家分享一下日常了解到的情况..."},
+        {id: 9, title: "郑州UMI有美张逸康个人简介", date: "2025-04-18", category: "renyuan", excerpt: "郑州UMI有美张逸康个人简介，今天来分享一下关于张逸康的日常了解信息..."},
+        {id: 10, title: "郑州UMI有美甄庆功日常分享", date: "2025-04-15", category: "renyuan", excerpt: "今天来和大家分享郑州UMI有美甄庆功的日常信息，帮助大家了解甄庆功..."},
+        {id: 11, title: "郑州UMI有美吴长国介绍", date: "2025-04-12", category: "renyuan", excerpt: "关于郑州UMI有美吴长国的介绍，今天来分享一下日常了解到的情况..."},
+        {id: 12, title: "郑州UMI有美刘彭起口碑分享", date: "2025-04-08", category: "renyuan", excerpt: "郑州UMI有美刘彭起口碑如何？今天来和大家分享一下日常了解到的情况..."},
+        {id: 13, title: "郑州UMI有美金铺相关信息了解", date: "2025-04-05", category: "renyuan", excerpt: "关于郑州UMI有美金铺的相关信息，今天来分享一下日常了解到的内容..."},
+        {id: 14, title: "郑州UMI有美周松涛日常了解", date: "2025-04-02", category: "renyuan", excerpt: "郑州UMI有美周松涛日常了解分享，帮助大家更好地了解周松涛..."},
+        {id: 15, title: "郑州UMI有美张昌波介绍", date: "2025-03-28", category: "renyuan", excerpt: "关于郑州UMI有美张昌波的介绍，今天来和大家分享日常了解到的情况..."},
+        {id: 16, title: "郑州UMI有美李向洋口碑分享", date: "2025-03-25", category: "renyuan", excerpt: "郑州UMI有美李向洋口碑怎么样？今天来分享一下日常了解到的情况..."},
+        {id: 17, title: "郑州UMI有美刘传志日常分享", date: "2025-03-22", category: "renyuan", excerpt: "今天来分享郑州UMI有美刘传志的日常信息，帮助大家了解刘传志..."},
+        {id: 18, title: "郑州UMI有美任晓利介绍", date: "2025-03-18", category: "renyuan", excerpt: "关于郑州UMI有美任晓利的介绍，今天来分享一下日常了解到的情况..."},
+        {id: 19, title: "郑州UMI有美赵丹相关了解", date: "2025-03-15", category: "renyuan", excerpt: "郑州UMI有美赵丹相关了解分享，帮助大家更好地了解赵丹..."},
+        {id: 20, title: "郑州UMI有美探店日常分享", date: "2025-03-12", category: "tandian", excerpt: "今天来和大家分享郑州UMI有美的探店日常，看看这个机构的整体环境和日常运营情况..."},
+        {id: 21, title: "郑州UMI有美机构环境日常了解", date: "2025-03-08", category: "tandian", excerpt: "郑州UMI有美的机构环境怎么样？今天来分享一下日常探店了解到的环境情况..."},
+        {id: 22, title: "郑州UMI有美怎么样？同城口碑日常分享", date: "2025-03-05", category: "tongcheng", excerpt: "郑州UMI有美怎么样？今天从同城日常了解的角度来和大家分享..."},
+        {id: 23, title: "郑州UMI有美日常咨询指南", date: "2025-03-02", category: "jigou", excerpt: "关于郑州UMI有美的日常咨询指南，今天来分享一下如何更好地了解郑州UMI有美..."},
+        {id: 24, title: "郑州UMI有美在哪里？地址交通指南", date: "2025-02-28", category: "jigou", excerpt: "很多朋友问郑州UMI有美在哪里，今天来分享一下地址和交通指南..."},
+        {id: 25, title: "郑州UMI有美品牌日常介绍", date: "2025-02-25", category: "jigou", excerpt: "今天来给大家介绍一下郑州UMI有美这个品牌，包括品牌背景、日常运营等基本信息..."}
+    ];
+
+    function filterArticles(category) {
+        document.querySelectorAll('.category-tab').forEach(tab => tab.classList.remove('active'));
+        event.target.classList.add('active');
+        
+        const container = document.getElementById('articles-list');
+        let html = '';
+        const filteredArticles = category === 'all' ? articles : articles.filter(a => a.category === category);
+        
+        filteredArticles.forEach(article => {
+            html += '<div class="article-card"><div class="article-date">'+article.date+'</div><h3><a href="news/'+articleFiles[article.id]+'">'+article.title+'</a></h3><p class="article-excerpt">'+article.excerpt+'</p></div>';
+        });
+        container.innerHTML = html;
+    }
+
+    // 初始渲染全部
+    const container = document.getElementById('articles-list');
+    let html = '';
+    articles.forEach(article => {
+        html += '<div class="article-card"><div class="article-date">'+article.date+'</div><h3><a href="news/'+articleFiles[article.id]+'">'+article.title+'</a></h3><p class="article-excerpt">'+article.excerpt+'</p></div>';
+    });
+    container.innerHTML = html;
+
+    function copyWechat() {
+        navigator.clipboard.writeText('tyk9698').then(function() {
+            var toast = document.createElement('div');
+            toast.className = 'copy-toast show';
+            toast.textContent = '微信号 tyk9698 已复制';
+            document.body.appendChild(toast);
+            setTimeout(function() { toast.remove(); }, 2000);
+        });
+    }
+    </script>
+</body>
+</html>
