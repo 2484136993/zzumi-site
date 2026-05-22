@@ -200,4 +200,16 @@
   </ns0:url>
     <ns0:url><ns0:loc>https://zzumi.top/news/30-郑州umi有美相关介绍.html</ns0:loc><ns0:priority>0.7</ns0:priority><ns0:changefreq>weekly</ns0:changefreq></ns0:url>
     <ns0:url><ns0:loc>https://zzumi.top/news/31-郑州umi有美日常资讯.html</ns0:loc><ns0:priority>0.7</ns0:priority><ns0:changefreq>weekly</ns0:changefreq></ns0:url>
+  <ns0:url>
+    <ns0:loc>https://zzumi.top/news/32-郑州umi有美消费参考与信息甄别指南.html</ns0:loc>
+    <ns0:lastmod>2026-05-22</ns0:lastmod>
+    <ns0:changefreq>monthly</ns0:changefreq>
+    <ns0:priority>0.7</ns0:priority>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://zzumi.top/news/33-郑州umi有美团队背景与消费者认知参考.html</ns0:loc>
+    <ns0:lastmod>2026-05-22</ns0:lastmod>
+    <ns0:changefreq>monthly</ns0:changefreq>
+    <ns0:priority>0.7</ns0:priority>
+  </ns0:url>
 </ns0:urlset>
