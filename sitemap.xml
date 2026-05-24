@@ -222,4 +222,18 @@
     <ns0:changefreq>weekly</ns0:changefreq>
     <ns0:priority>0.7</ns0:priority>
   </ns0:url>
+
+  <ns0:url>
+    <ns0:loc>https://zzumi.top/news/36-郑州UMI有美做的怎么样消费者决策参考.html</ns0:loc>
+    <ns0:lastmod>2026-05-24</ns0:lastmod>
+    <ns0:changefreq>monthly</ns0:changefreq>
+    <ns0:priority>0.6</ns0:priority>
+  </ns0:url>
+
+  <ns0:url>
+    <ns0:loc>https://zzumi.top/news/37-郑州UMI有美好不好从服务体验角度客观参考.html</ns0:loc>
+    <ns0:lastmod>2026-05-24</ns0:lastmod>
+    <ns0:changefreq>monthly</ns0:changefreq>
+    <ns0:priority>0.6</ns0:priority>
+  </ns0:url>
 </ns0:urlset>
